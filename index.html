@@ -11,23 +11,20 @@
     <header class="nav">
       <div class="nav-inner">
         <a class="brand" href="index.html" aria-label="Home">
-          <img
-            src="/logo.png"
-            alt="Dorothy Kabula Welfare Foundation"
-            class="logo"
-          />
+          <img src="/logo.png" alt="Dorothy Kabula Welfare Foundation" class="logo" />
         </a>
 
         <nav class="links" aria-label="Primary">
-          <a href="donate.html">Donate</a>
-          <a href="#causes">Causes</a>
-          <a href="#how">How it works</a>
-          <a href="#stories">Updates</a>
-          <a href="#about">About</a>
+          <a href="about.html">About</a>
+          <a href="programmes.html">Programmes</a>
+          <a href="partnerships.html">Partnerships</a>
+          <a href="impact.html">Impact</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact</a>
         </nav>
 
         <div class="nav-actions">
-          <button class="ghost" id="searchBtn" type="button" aria-label="Search">
+          <button class="ghost" id="searchBtn" type="button" aria-label="Search on page">
             <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
               <path
                 d="M10.5 3a7.5 7.5 0 105.04 13.02l3.72 3.72a1 1 0 001.42-1.42l-3.72-3.72A7.5 7.5 0 0010.5 3zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"
@@ -44,185 +41,154 @@
     <!-- HERO -->
     <section class="hero" id="top">
       <div class="hero-wrap">
-        <!-- Semi-circle causes -->
-        <div class="orbit" aria-label="Cause categories">
-          <button class="cause o1" data-cause="Health" type="button">
-            <span class="circle" aria-hidden="true"></span>
-            <span class="label">Health</span>
-          </button>
-
-          <button class="cause o2" data-cause="Education" type="button">
-            <span class="circle" aria-hidden="true"></span>
-            <span class="label">Education</span>
-          </button>
-
-          <button class="cause o3" data-cause="Food relief" type="button">
-            <span class="circle" aria-hidden="true"></span>
-            <span class="label">Food relief</span>
-          </button>
-
-          <button class="cause o4" data-cause="Community" type="button">
-            <span class="circle" aria-hidden="true"></span>
-            <span class="label">Community</span>
-          </button>
-
-          <button class="cause o5" data-cause="Animals" type="button">
-            <span class="circle" aria-hidden="true"></span>
-            <span class="label">Animals</span>
-          </button>
-        </div>
-
-        <!-- Center -->
         <div class="center">
           <div class="pill">
             <span class="pill-dot"></span>
-            Donations & verified information
+            Registered Namibian non-profit • Zambezi Region
           </div>
 
-          <h1 class="title">DONATE TODAY</h1>
+          <h1 class="title">UNITING THE ZAMBEZI</h1>
 
           <p class="subtitle">
-            Support Namibian communities through transparent, verified donations.
+            Inclusive social and economic development through social welfare, empowerment,
+            entrepreneurship, agriculture, culture, and strategic partnerships.
           </p>
 
           <div class="cta-row">
-            <button class="primary big" id="heroDonateBtn" type="button">
-              Donate now
-            </button>
-            <a class="secondary" href="#how">Learn how it works</a>
+            <a class="primary big" href="partnerships.html">Partner With Us</a>
+            <a class="secondary" href="about.html">Learn more</a>
+            <button class="primary big" id="heroDonateBtn" type="button">Donate</button>
           </div>
 
           <div class="note" id="selectedNote" aria-live="polite"></div>
         </div>
-      </div>
-    </section>
 
-    <!-- HOW -->
-    <section class="section" id="how">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>How it works</h2>
-          <p>Simple steps. Secure payments. Transparent outcomes.</p>
-        </div>
+        <!-- Orbit is now BELOW content (no overlap) -->
+        <div class="orbit" aria-label="Strategic focus areas">
+          <button class="cause" data-cause="Social Welfare" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Welfare</span>
+          </button>
 
-        <div class="updates">
-          <div class="update">
-            <div class="update-title">1. Choose a cause</div>
-            <div class="update-text">Pick a category that matters to you.</div>
-          </div>
+          <button class="cause" data-cause="Youth & Women Empowerment" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Empowerment</span>
+          </button>
 
-          <div class="update">
-            <div class="update-title">2. Donate securely</div>
-            <div class="update-text">We’ll connect a trusted payment provider (PayToday/DPO).</div>
-          </div>
+          <button class="cause" data-cause="Entrepreneurship" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Business</span>
+          </button>
 
-          <div class="update">
-            <div class="update-title">3. See the impact</div>
-            <div class="update-text">We publish updates on how donations are used.</div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <button class="cause" data-cause="Agriculture & Food Security" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Agriculture</span>
+          </button>
 
-    <!-- CAUSES -->
-    <section class="section soft" id="causes">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Causes</h2>
-          <p>Explore where support is needed most.</p>
-        </div>
-
-        <div class="cards">
-          <article class="card">
-            <div class="card-top">
-              <span class="chip">Health</span>
-              <span class="mini">Care & support</span>
-            </div>
-            <h3>Medical assistance</h3>
-            <p>Support people with treatment, transport, and essential care costs.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <span class="chip">Education</span>
-              <span class="mini">Fees & supplies</span>
-            </div>
-            <h3>Learning support</h3>
-            <p>Help with school fees, uniforms, books, and learning materials.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <span class="chip">Food relief</span>
-              <span class="mini">Immediate help</span>
-            </div>
-            <h3>Meals & essentials</h3>
-            <p>Provide food parcels and basic essentials to households in need.</p>
-          </article>
-
-          <article class="card">
-            <div class="card-top">
-              <span class="chip">Community</span>
-              <span class="mini">Local projects</span>
-            </div>
-            <h3>Community initiatives</h3>
-            <p>Support local programs that strengthen and uplift communities.</p>
-          </article>
+          <button class="cause" data-cause="Sports, Arts & Culture" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Culture</span>
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- UPDATES -->
-    <section class="section" id="stories">
+    <!-- QUICK LINKS -->
+    <section class="section soft">
       <div class="wrap">
         <div class="section-head">
-          <h2>Updates & information</h2>
-          <p>Sharing transparent progress and outcomes.</p>
+          <h2>Explore</h2>
+          <p>Everything is organised into simple pages.</p>
         </div>
 
-        <div class="updates">
-          <div class="update">
-            <div class="update-date">This week</div>
-            <div class="update-title">Medical support delivered</div>
-            <div class="update-text">Funds helped cover transport and essential treatment support.</div>
-          </div>
+        <div class="cards cards-3">
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">About</span><span class="mini">Who we are</span>
+            </div>
+            <h3>Foundation overview</h3>
+            <p>Legal status, vision, mission, values, and leadership.</p>
+            <div class="cta-row left mt">
+              <a class="secondary" href="about.html">Open About</a>
+            </div>
+          </article>
 
-          <div class="update">
-            <div class="update-date">Last month</div>
-            <div class="update-title">School supplies distribution</div>
-            <div class="update-text">Donations helped provide uniforms and learning packs.</div>
-          </div>
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Programmes</span><span class="mini">What we do</span>
+            </div>
+            <h3>Strategic focus areas</h3>
+            <p>Welfare, empowerment, entrepreneurship, agriculture, culture, partnerships.</p>
+            <div class="cta-row left mt">
+              <a class="secondary" href="programmes.html">Open Programmes</a>
+            </div>
+          </article>
 
-          <div class="update">
-            <div class="update-date">Ongoing</div>
-            <div class="update-title">Food parcels initiative</div>
-            <div class="update-text">Weekly deliveries continue for families facing hardship.</div>
-          </div>
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Partnerships</span><span class="mini">Work with us</span>
+            </div>
+            <h3>Investment & collaboration</h3>
+            <p>CSR, grants, investors, and development agencies.</p>
+            <div class="cta-row left mt">
+              <a class="secondary" href="partnerships.html">Open Partnerships</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Impact</span><span class="mini">Accountability</span>
+            </div>
+            <h3>Monitoring & reporting</h3>
+            <p>What we track and how we report progress.</p>
+            <div class="cta-row left mt">
+              <a class="secondary" href="impact.html">Open Impact</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">News</span><span class="mini">Updates</span>
+            </div>
+            <h3>Events & stories</h3>
+            <p>Announcements, milestones, and community stories.</p>
+            <div class="cta-row left mt">
+              <a class="secondary" href="news.html">Open News</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Contact</span><span class="mini">Reach us</span>
+            </div>
+            <h3>Official channels</h3>
+            <p>General, partnerships, donations, and admin contacts.</p>
+            <div class="cta-row left mt">
+              <a class="secondary" href="contact.html">Open Contact</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer" id="about">
+    <footer class="footer">
       <div class="wrap foot">
         <div>
           <a class="brand small" href="index.html" aria-label="Home">
-            <img
-              src="/logo.png"
-              alt="Dorothy Kabula Welfare Foundation"
-              class="logo small"
-            />
+            <img src="/logo.png" alt="Dorothy Kabula Welfare Foundation" class="logo small" />
           </a>
-          <p class="muted">
-            A donations + information platform focused on trust, transparency, and impact.
-          </p>
+          <p class="muted">Community-led development in the Zambezi Region.</p>
         </div>
 
         <div class="foot-links">
+          <a href="about.html">About</a>
+          <a href="programmes.html">Programmes</a>
+          <a href="partnerships.html">Partnerships</a>
+          <a href="impact.html">Impact</a>
+          <a href="news.html">News</a>
+          <a href="contact.html">Contact</a>
           <a href="donate.html">Donate</a>
-          <a href="#causes">Causes</a>
-          <a href="#how">How it works</a>
-          <a href="#stories">Updates</a>
         </div>
 
         <div class="copy">
