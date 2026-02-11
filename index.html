@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dorothy Kabula Welfare Foundation</title>
+  </head>
+
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="index.html" aria-label="Home">
+          <img
+            src="/logo.png"
+            alt="Dorothy Kabula Welfare Foundation"
+            class="logo"
+          />
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="donate.html">Donate</a>
+          <a href="#causes">Causes</a>
+          <a href="#how">How it works</a>
+          <a href="#stories">Updates</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="ghost" id="searchBtn" type="button" aria-label="Search">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+              <path
+                d="M10.5 3a7.5 7.5 0 105.04 13.02l3.72 3.72a1 1 0 001.42-1.42l-3.72-3.72A7.5 7.5 0 0010.5 3zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"
+                fill="currentColor"
+              />
+            </svg>
+          </button>
+
+          <button class="primary" id="donateTopBtn" type="button">Donate</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-wrap">
+        <!-- Semi-circle causes -->
+        <div class="orbit" aria-label="Cause categories">
+          <button class="cause o1" data-cause="Health" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Health</span>
+          </button>
+
+          <button class="cause o2" data-cause="Education" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Education</span>
+          </button>
+
+          <button class="cause o3" data-cause="Food relief" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Food relief</span>
+          </button>
+
+          <button class="cause o4" data-cause="Community" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Community</span>
+          </button>
+
+          <button class="cause o5" data-cause="Animals" type="button">
+            <span class="circle" aria-hidden="true"></span>
+            <span class="label">Animals</span>
+          </button>
+        </div>
+
+        <!-- Center -->
+        <div class="center">
+          <div class="pill">
+            <span class="pill-dot"></span>
+            Donations & verified information
+          </div>
+
+          <h1 class="title">DONATE TODAY</h1>
+
+          <p class="subtitle">
+            Support Namibian communities through transparent, verified donations.
+          </p>
+
+          <div class="cta-row">
+            <button class="primary big" id="heroDonateBtn" type="button">
+              Donate now
+            </button>
+            <a class="secondary" href="#how">Learn how it works</a>
+          </div>
+
+          <div class="note" id="selectedNote" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section class="section" id="how">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Simple steps. Secure payments. Transparent outcomes.</p>
+        </div>
+
+        <div class="updates">
+          <div class="update">
+            <div class="update-title">1. Choose a cause</div>
+            <div class="update-text">Pick a category that matters to you.</div>
+          </div>
+
+          <div class="update">
+            <div class="update-title">2. Donate securely</div>
+            <div class="update-text">We’ll connect a trusted payment provider (PayToday/DPO).</div>
+          </div>
+
+          <div class="update">
+            <div class="update-title">3. See the impact</div>
+            <div class="update-text">We publish updates on how donations are used.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAUSES -->
+    <section class="section soft" id="causes">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Causes</h2>
+          <p>Explore where support is needed most.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Health</span>
+              <span class="mini">Care & support</span>
+            </div>
+            <h3>Medical assistance</h3>
+            <p>Support people with treatment, transport, and essential care costs.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Education</span>
+              <span class="mini">Fees & supplies</span>
+            </div>
+            <h3>Learning support</h3>
+            <p>Help with school fees, uniforms, books, and learning materials.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Food relief</span>
+              <span class="mini">Immediate help</span>
+            </div>
+            <h3>Meals & essentials</h3>
+            <p>Provide food parcels and basic essentials to households in need.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <span class="chip">Community</span>
+              <span class="mini">Local projects</span>
+            </div>
+            <h3>Community initiatives</h3>
+            <p>Support local programs that strengthen and uplift communities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPDATES -->
+    <section class="section" id="stories">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Updates & information</h2>
+          <p>Sharing transparent progress and outcomes.</p>
+        </div>
+
+        <div class="updates">
+          <div class="update">
+            <div class="update-date">This week</div>
+            <div class="update-title">Medical support delivered</div>
+            <div class="update-text">Funds helped cover transport and essential treatment support.</div>
+          </div>
+
+          <div class="update">
+            <div class="update-date">Last month</div>
+            <div class="update-title">School supplies distribution</div>
+            <div class="update-text">Donations helped provide uniforms and learning packs.</div>
+          </div>
+
+          <div class="update">
+            <div class="update-date">Ongoing</div>
+            <div class="update-title">Food parcels initiative</div>
+            <div class="update-text">Weekly deliveries continue for families facing hardship.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="about">
+      <div class="wrap foot">
+        <div>
+          <a class="brand small" href="index.html" aria-label="Home">
+            <img
+              src="/logo.png"
+              alt="Dorothy Kabula Welfare Foundation"
+              class="logo small"
+            />
+          </a>
+          <p class="muted">
+            A donations + information platform focused on trust, transparency, and impact.
+          </p>
+        </div>
+
+        <div class="foot-links">
+          <a href="donate.html">Donate</a>
+          <a href="#causes">Causes</a>
+          <a href="#how">How it works</a>
+          <a href="#stories">Updates</a>
+        </div>
+
+        <div class="copy">
+          <small>© <span id="year"></span> Dorothy Kabula Welfare Foundation</small>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
