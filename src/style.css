@@ -453,3 +453,54 @@ input{
   .logo{height:48px}
   .amounts{grid-template-columns:repeat(2, 1fr)}
 }
+
+
+/* DONATE MODAL */
+
+.modal {
+  display: none; 
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  width: 90%;
+  max-width: 480px;
+  padding: 30px;
+  border-radius: 18px;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0,0,0,.25);
+  animation: modalFade .25s ease-out;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.close-btn:hover {
+  color: var(--accent);
+}
+
+.pay-btn {
+  margin-top: 16px;
+  width: 100%;
+}
+
+@keyframes modalFade {
+  from { opacity: 0; transform: scale(.95); }
+  to { opacity: 1; transform: scale(1); }
+}
